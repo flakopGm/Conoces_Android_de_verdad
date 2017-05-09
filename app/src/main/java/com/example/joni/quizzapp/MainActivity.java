@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Actualizar el progreso de la barra en baremos de 10 en 10.
     public void sumarProgress() {
-        progressStatus = progressStatus + 10;
+        progressStatus =+ 10;
         mostrarProgress(progressStatus);
     }
 
@@ -122,13 +122,12 @@ public class MainActivity extends AppCompatActivity {
         }
         // @rUser es la respuesta del usuario.
         String rUser = question2.getText().toString();
-        // Posibles opciones de la respuesta correcta.
+        // Respuesta incorrecta ignorando mayúsculas y minísculas..
         String rCorrecta = "MICROSOFT";
-        String rCorrecta1 = "microsoft";
-        String rCorrecta2 = "Microsoft";
+
 
         // Reaccioón a la elección del usuario.
-        if (rUser.equals(rCorrecta) || rUser.equals(rCorrecta1) || rUser.equals(rCorrecta2)) {
+        if (rUser.equalsIgnoreCase(rCorrecta)) {
             puntuacion = puntuacion + 10;
             question2.setVisibility(View.GONE);
             resultado2.setImageResource(R.drawable.resbien);
