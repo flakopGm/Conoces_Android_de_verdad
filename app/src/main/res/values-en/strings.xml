@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="caja">In the box</string>
+    <string name="boton_inicio">INSTRUCTIONS</string>
+    <string name="boton_comenzar_reiniciar">START</string>
+    <string name="enunciado1">Who was the creator of the Android startup before Google acquired it ?.</string>
+    <string name="enunciado3">What is the name of the source specially designed for Android?</string>
+    <string name="enunciado2">What company wins without \"doing anything\" for a patent issue with every Android sold ?.</string>
+    <string name="enunciado4">What is the name of the NASA project where Android participated?</string>
+    <string name="enunciado5">As they were called \"inside Google\" the first 2 versions of android 1.0 and 1.1 ?.</string>
+    <string name="enunciado6">A \"secret\" in every version of Android, what do we find in ...?</string>
+    <string name="easter">Easter Egg</string>
+    <string name="garantia">In warranty</string>
+    <string name="pregunta1">Question 1:</string>
+    <string name="pregunta2">Question 2:</string>
+    <string name="pregunta3">Question 3:</string>
+    <string name="pregunta4">Question 4:</string>
+    <string name="pregunta5">Question 5:</string>
+    <string name="pregunta6">Question 6:</string>
+    <string name="subtitulo">For real?</string>
+    <string name="textoaqui">Your answer here</string>
+    <string name="titulo">Do you know Android?</string>
+    <string name="web">In the web</string>
+    <string name="acierto">ALL RIGHT! ;) 10 more points !.</string>
+    <string name="acierto_doble">ALL RIGHT! ;) 20 more points !.</string>
+    <string name="comience">START THE QUESTIONNAIRE</string>
+    <string name="cuestionario">Then a questionnaire where you can check what you know of some curiosities of Android.</string>
+    <string name="enhorabuena">CONGRATULATIONS! To get the maximum score.</string>
+    <string name="escriba_respuesta">WRITE YOUR RESPONSE</string>
+    <string name="fallo">A failed :( Do not add points.</string>
+    <string name="faltan_preguntas">QUESTIONS TO BE ANSWERED</string>
+    <string name="regular">REGULAR: | But 10 more points !.</string>
+    <string name="respuesta_enviada">ANSWER SENT</string>
+    <string name="seleccione_dos">SELECT ANSWERS</string>
+    <string name="seleccione_respuesta">SELECT AN ANSWER</string>
+    <string name="puntuacionMaxima">Maximum Score: 70 points.</string>
+</resources>

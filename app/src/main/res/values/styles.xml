@@ -1,0 +1,232 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/holo_green_light</item>
+        <item name="colorPrimaryDark">@android:color/holo_green_dark</item>
+        <item name="colorAccent">@android:color/holo_green_light</item>
+    </style>
+
+    <style name="linearCabecera">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@drawable/android6598</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="tituloEncabezado">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:text">@string/titulo</item>
+    </style>
+
+    <style name="subtituloEncabezado">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:text">@string/subtitulo</item>
+    </style>
+
+    <style name="textoPortada">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/cuestionario</item>
+    </style>
+
+    <style name="fotoPortada">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:src">@drawable/profe_android</item>
+        <item name="android:visibility">visible</item>
+    </style>
+    <!-- Estilo del scrollView. -->
+    <style name="scroll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!-- Estilo de los bloques de preguntas contenidos cada uno en un RelativeLayout independiente.
+    -->
+    <style name="bloquesPreguntas">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- Estilo numero de pregunta. -->
+    <style name="preguntas">
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- Estilo para las preguntas. -->
+    <style name="pregunta">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Estilo para los RadioButton. -->
+    <style name="selectores">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+    </style>
+    <!-- Grupo de RadioButton del RadioGroup. -->
+    <style name="grupos">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!-- Imagen resultante de la selección del usuario, fallo o acierto. -->
+    <style name="imagenesResultado">
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!-- Estilo comprobación preguntas. -->
+    <style name="botonesPreguntas">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/untitled</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+    </style>
+    <!-- Estilo para disposiciones con campos iguales. -->
+    <style name="linearVerticales">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- Estilo para dispociones con sus atributos de longitud y altitud definido en matchParent.-->
+    <style name="disposicionMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">65dp</item>
+        <item name="android:layout_marginBottom">60dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:hint">@string/textoaqui</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLength">9</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <!-- Estilo para view de 1dp. -->
+    <style name="viewDeUno">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.5dp</item>
+        <item name="android:background">@android:color/holo_green_light</item>
+        <item name="android:layout_marginRight">100dp</item>
+        <item name="android:layout_marginLeft">100dp</item>
+    </style>
+    <!-- Estilo para view de 2dp. -->
+    <style name="viewDeDos">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@android:color/holo_green_light</item>
+    </style>
+    <!-- Estilo para view de 4dp. -->
+    <style name="viewDeCuatro">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:background">@android:color/holo_green_light</item>
+    </style>
+    <!-- Estilo para el texto informativo final. -->
+    <style name="textoResultado">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:text"></item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Headline</item>
+    </style>
+    <!-- Estilo para los botones de comprobación de pregunta. -->
+    <style name="botonResultado">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">25dp</item>
+        <item name="android:background">@drawable/puntuacion</item>
+        <item name="android:padding">25dp</item>
+    </style>
+    <!-- Estilo para los checkBox. -->
+    <style name="checkbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+    </style>
+
+    <!-- Estilo botones default. -->
+    <style name="linearBotonesDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="botonInicio">
+        <item name="android:layout_width">125dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/holo_green_dark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">@string/boton_inicio</item>
+    </style>
+
+    <style name="botonComenzar">
+        <item name="android:layout_width">125dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/holo_green_light</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">@string/boton_comenzar_reiniciar</item>
+    </style>
+
+</resources>

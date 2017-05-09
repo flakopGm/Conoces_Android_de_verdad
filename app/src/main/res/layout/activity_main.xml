@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/disposicionMatchParent"
+    android:orientation="vertical"
+    tools:context="com.example.joni.quizzapp.MainActivity">
+
+    <RelativeLayout style="@style/disposicionMatchParent">
+
+        <!-- Cabecera -->
+        <LinearLayout
+            android:id="@+id/portada"
+            style="@style/linearCabecera">
+
+            <TextView style="@style/tituloEncabezado" />
+
+            <TextView style="@style/subtituloEncabezado" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_down_portada"
+            style="@style/viewDeDos"
+            android:layout_below="@id/portada" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_down_portada"
+            android:indeterminate="false"
+            android:max="60"
+            android:progress="0" />
+
+        <View
+            android:id="@+id/view_down_progress_bar"
+            style="@style/viewDeDos"
+            android:layout_below="@id/progress_bar" />
+
+        <LinearLayout
+            style="@style/linearVerticales"
+            android:layout_below="@id/view_down_progress_bar">
+
+            <TextView
+                android:id="@+id/cuestionario"
+                style="@style/textoPortada" />
+
+            <!-- ScrollView contenedor de un LinearLayout con las preguntas. -->
+            <ScrollView
+                android:id="@+id/rollo"
+                style="@style/scroll">
+
+                <LinearLayout style="@style/linearVerticales">
+
+                    <!-- Pregunta 1 -->
+                    <RelativeLayout style="@style/bloquesPreguntas">
+
+                        <TextView
+                            android:id="@+id/numero1"
+                            style="@style/preguntas"
+                            android:text="@string/pregunta1" />
+
+                        <View
+                            style="@style/viewDeUno"
+                            android:layout_below="@id/numero1" />
+
+                        <TextView
+                            android:id="@+id/pregunta_uno"
+                            style="@style/pregunta"
+                            android:layout_below="@id/numero1"
+                            android:text="@string/enunciado1" />
+
+                        <View
+                            android:id="@+id/view_down_pregunta_uno"
+                            style="@style/viewDeDos"
+                            android:layout_below="@id/pregunta_uno" />
+
+                        <RadioGroup
+                            android:id="@+id/question1"
+                            style="@style/grupos"
+                            android:layout_below="@id/view_down_pregunta_uno">
+
+                            <RadioButton
+                                android:id="@+id/joanPeterson"
+                                style="@style/selectores"
+                                android:text="@string/joanPeterson" />
+
+                            <RadioButton
+                                android:id="@+id/luisCervantes"
+                                style="@style/selectores"
+                                android:text="@string/luisCervantes" />
+
+                            <RadioButton
+                                android:id="@+id/andyDublin"
+                                style="@style/selectores"
+                                android:text="@string/andyDublin" />
+
+                            <RadioButton
+                                android:id="@+id/andyRubin"
+                                style="@style/selectores"
+                                android:text="@string/andyRublin" />
+                        </RadioGroup>
+
+                        <!-- Imagen de resultado de la elección del ususario. -->
+                        <ImageView
+                            android:id="@+id/foto_resultado1"
+                            style="@style/imagenesResultado"
+                            android:layout_below="@id/view_down_pregunta_uno" />
+
+                        <!-- Botón comprobación de la pregunta en cuestión. -->
+                        <Button
+                            android:id="@+id/botonCom1"
+                            style="@style/botonesPreguntas"
+                            android:layout_below="@id/view_down_pregunta_uno"
+                            android:onClick="comprobacionPregunta1" />
+                    </RelativeLayout>
+
+                    <View style="@style/viewDeCuatro" />
+
+                    <!-- Pregunta 2 -->
+                    <RelativeLayout style="@style/bloquesPreguntas">
+
+                        <TextView
+                            android:id="@+id/numero2"
+                            style="@style/preguntas"
+                            android:text="@string/pregunta2" />
+
+                        <View
+                            style="@style/viewDeUno"
+                            android:layout_below="@id/numero2" />
+
+                        <TextView
+                            android:id="@+id/pregunta_dos"
+                            style="@style/pregunta"
+                            android:layout_below="@id/numero2"
+                            android:text="@string/enunciado2" />
+
+                        <View
+                            android:id="@+id/view_pregunta2"
+                            style="@style/viewDeDos"
+                            android:layout_below="@id/pregunta_dos" />
+
+                        <EditText
+                            android:id="@+id/question2"
+                            style="@style/editText"
+                            android:layout_below="@id/view_pregunta2" />
+
+                        <ImageView
+                            android:id="@+id/foto_resultado2"
+                            style="@style/imagenesResultado"
+                            android:layout_below="@id/view_pregunta2" />
+
+                        <Button
+                            style="@style/botonesPreguntas"
+                            android:layout_below="@id/view_pregunta2"
+                            android:layout_marginTop="60dp"
+                            android:onClick="comprobacionPregunta2" />
+                    </RelativeLayout>
+
+                    <View style="@style/viewDeCuatro" />
+
+                    <!-- Pregunta 3 -->
+                    <RelativeLayout style="@style/bloquesPreguntas">
+
+                        <TextView
+                            android:id="@+id/numero3"
+                            style="@style/preguntas"
+                            android:text="@string/pregunta3" />
+
+                        <View
+                            style="@style/viewDeUno"
+                            android:layout_below="@id/numero3" />
+
+                        <TextView
+                            android:id="@+id/pregunta_tres"
+                            style="@style/pregunta"
+                            android:layout_below="@id/numero3"
+                            android:text="@string/enunciado3" />
+
+                        <View
+                            android:id="@+id/view_pregunta3"
+                            style="@style/viewDeDos"
+                            android:layout_below="@id/pregunta_tres" />
+
+                        <RadioGroup
+                            android:id="@+id/question3"
+                            style="@style/grupos"
+                            android:layout_below="@id/view_pregunta3">
+
+                            <RadioButton
+                                android:id="@+id/sanSerif"
+                                style="@style/selectores"
+                                android:text="@string/sansSerif" />
+
+                            <RadioButton
+                                android:id="@+id/roboto"
+                                style="@style/selectores"
+                                android:text="@string/roboto" />
+
+                            <RadioButton
+                                android:id="@+id/casual"
+                                style="@style/selectores"
+                                android:text="@string/casual" />
+
+                            <RadioButton
+                                android:id="@+id/androFont"
+                                style="@style/selectores"
+                                android:text="@string/androFont" />
+                        </RadioGroup>
+
+                        <ImageView
+                            android:id="@+id/foto_resultado3"
+                            style="@style/imagenesResultado"
+                            android:layout_below="@id/view_pregunta3" />
+
+                        <Button
+                            style="@style/botonesPreguntas"
+                            android:layout_below="@id/view_pregunta3"
+                            android:onClick="comprobacionPregunta3" />
+                    </RelativeLayout>
+
+                    <View style="@style/viewDeCuatro" />
+
+                    <!-- Pregunta 4 -->
+                    <RelativeLayout style="@style/bloquesPreguntas">
+
+                        <TextView
+                            android:id="@+id/numero4"
+                            style="@style/preguntas"
+                            android:text="@string/pregunta4" />
+
+                        <View
+                            style="@style/viewDeUno"
+                            android:layout_below="@id/numero4" />
+
+                        <TextView
+                            android:id="@+id/pregunta_cuatro"
+                            style="@style/pregunta"
+                            android:layout_below="@id/numero4"
+                            android:text="@string/enunciado4" />
+
+                        <View
+                            android:id="@+id/view_pregunta4"
+                            style="@style/viewDeDos"
+                            android:layout_below="@id/pregunta_cuatro" />
+
+                        <RadioGroup
+                            android:id="@+id/question4"
+                            style="@style/grupos"
+                            android:layout_below="@id/view_pregunta4">
+
+                            <RadioButton
+                                android:id="@+id/ete"
+                                style="@style/selectores"
+                                android:text="@string/ete" />
+
+                            <RadioButton
+                                android:id="@+id/eth"
+                                style="@style/selectores"
+                                android:text="@string/eth" />
+
+                            <RadioButton
+                                android:id="@+id/eht"
+                                style="@style/selectores"
+                                android:text="@string/eht" />
+
+                            <RadioButton
+                                android:id="@+id/het"
+                                style="@style/selectores"
+                                android:text="@string/het" />
+                        </RadioGroup>
+
+                        <ImageView
+                            android:id="@+id/foto_resultado4"
+                            style="@style/imagenesResultado"
+                            android:layout_below="@id/view_pregunta4" />
+
+                        <Button
+                            style="@style/botonesPreguntas"
+                            android:layout_below="@id/view_pregunta4"
+                            android:onClick="comprobacionPregunta4" />
+                    </RelativeLayout>
+
+                    <View style="@style/viewDeCuatro" />
+
+                    <!-- Pregunta 5 -->
+                    <RelativeLayout style="@style/bloquesPreguntas">
+
+                        <TextView
+                            android:id="@+id/numero5"
+                            style="@style/preguntas"
+                            android:text="@string/pregunta5" />
+
+                        <View
+                            style="@style/viewDeUno"
+                            android:layout_below="@id/numero5" />
+
+                        <TextView
+                            android:id="@+id/pregunta_cinco"
+                            style="@style/pregunta"
+                            android:layout_below="@id/numero5"
+                            android:text="@string/enunciado5" />
+
+                        <View
+                            android:id="@+id/view_pregunta5"
+                            style="@style/viewDeDos"
+                            android:layout_below="@id/pregunta_cinco" />
+
+                        <LinearLayout
+                            android:id="@+id/question5"
+                            style="@style/linearVerticales"
+                            android:layout_below="@id/view_pregunta5"
+                            android:layout_margin="10dp">
+
+                            <CheckBox
+                                android:id="@+id/alfa"
+                                style="@style/checkbox"
+                                android:text="@string/alfabeta" />
+
+                            <CheckBox
+                                android:id="@+id/astroBoy"
+                                style="@style/checkbox"
+                                android:layout_below="@id/alfa"
+                                android:text="@string/astropetit" />
+
+                            <CheckBox
+                                android:id="@+id/xy"
+                                style="@style/checkbox"
+                                android:layout_below="@id/astroBoy"
+                                android:text="@string/xy" />
+
+                            <CheckBox
+                                android:id="@+id/gooandgle"
+                                style="@style/checkbox"
+                                android:layout_below="@id/xy"
+                                android:text="@string/google" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/foto_resultado5"
+                            style="@style/imagenesResultado"
+                            android:layout_below="@id/view_pregunta5" />
+
+                        <Button
+                            style="@style/botonesPreguntas"
+                            android:layout_below="@id/view_pregunta5"
+                            android:onClick="comprobacionPregunta5" />
+                    </RelativeLayout>
+
+                    <View style="@style/viewDeCuatro" />
+
+                    <!-- Pregunta 6 -->
+                    <RelativeLayout style="@style/bloquesPreguntas">
+
+                        <TextView
+                            android:id="@+id/numero6"
+                            style="@style/preguntas"
+                            android:text="@string/pregunta6" />
+
+                        <View
+                            style="@style/viewDeUno"
+                            android:layout_below="@id/numero6" />
+
+                        <TextView
+                            android:id="@+id/pregunto_seis"
+                            style="@style/pregunta"
+                            android:layout_below="@id/numero6"
+                            android:text="@string/enunciado6" />
+
+                        <View
+                            android:id="@+id/view_pregunta6"
+                            style="@style/viewDeDos"
+                            android:layout_below="@id/pregunto_seis" />
+
+                        <RadioGroup
+                            android:id="@+id/question6"
+                            style="@style/grupos"
+                            android:layout_below="@id/view_pregunta6">
+
+                            <RadioButton
+                                android:id="@+id/caja"
+                                style="@style/selectores"
+                                android:text="@string/caja" />
+
+                            <RadioButton
+                                android:id="@+id/garantia"
+                                style="@style/selectores"
+                                android:text="@string/garantia" />
+
+                            <RadioButton
+                                android:id="@+id/easteregg"
+                                style="@style/selectores"
+                                android:text="@string/easter" />
+
+                            <RadioButton
+                                android:id="@+id/web"
+                                style="@style/selectores"
+                                android:text="@string/web" />
+                        </RadioGroup>
+
+                        <ImageView
+                            android:id="@+id/foto_resultado6"
+                            style="@style/imagenesResultado"
+                            android:layout_below="@id/view_pregunta6" />
+
+                        <Button
+                            style="@style/botonesPreguntas"
+                            android:layout_below="@id/view_pregunta6"
+                            android:onClick="comprobacionPregunta6" />
+                    </RelativeLayout>
+
+                    <View style="@style/viewDeCuatro" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="100dp">
+
+                        <!-- Texto puntuación final. -->
+                        <TextView
+                            android:id="@+id/texfinal"
+                            style="@style/textoResultado" />
+
+                        <!-- Botón comprobación puntuación final. -->
+                        <Button
+                            android:id="@+id/botonfinal"
+                            style="@style/botonResultado"
+                            android:onClick="puntuacionFinal" />
+                    </RelativeLayout>
+
+                    <View style="@style/viewDeCuatro" />
+                </LinearLayout>
+            </ScrollView>
+
+            <!-- Imagen portada. -->
+            <ImageView
+                android:id="@+id/fotoprofe"
+                style="@style/fotoPortada" />
+
+            <!-- Botones default para Inicio/Reiniciar. -->
+            <LinearLayout style="@style/linearBotonesDefault">
+
+                <Button
+                    style="@style/botonInicio"
+                    android:onClick="comenzarDeNuevo" />
+
+                <Button
+                    style="@style/botonComenzar"
+                    android:onClick="inicio" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

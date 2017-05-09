@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="caja">En la caja</string>
+    <string name="boton_inicio">INICIO</string>
+    <string name="boton_comenzar_reiniciar">COMENZAR</string>
+    <string name="enunciado1">¿Quién fue el creador de la startup de Android antes de que Google lo adquiriese?.</string>
+    <string name="enunciado3">¿Como se llama la fuente diseñada especialmente para Android?.</string>
+    <string name="enunciado2">¿Que compañía gana \"sin hacer nada\" por un tema de patentes con cada Android vendido?.</string>
+    <string name="enunciado4">¿Como se llama el proyecto de la NASA donde Android participó?</string>
+    <string name="enunciado5">¿Como se llamaban \"dentro de Google\" las 2 primeras versiones de android 1.0 y 1.1?.</string>
+    <string name="enunciado6">Un \"secretillo\" en cada versión de Android, ¿que encontramos en...?.</string>
+    <string name="easter">Huevo de pascua</string>
+    <string name="garantia">En la garantía</string>
+    <string name="pregunta1">"Pregunta nº1: "</string>
+    <string name="pregunta2">"Pregunta nº2: "</string>
+    <string name="pregunta3">"Pregunta nº3: "</string>
+    <string name="pregunta4">"Pregunta nº4: "</string>
+    <string name="pregunta5">"Pregunta nº5: "</string>
+    <string name="pregunta6">"Pregunta nº6: "</string>
+    <string name="subtitulo">¿De Verdad?</string>
+    <string name="textoaqui">Su respuesta aqui</string>
+    <string name="titulo">¿Conoces Android?</string>
+    <string name="web">En la web</string>
+    <string name="acierto">\"BIEN! ;) 10 Puntos más!.\"</string>
+    <string name="acierto_doble">BIEN! ;) 20 Puntos más!</string>
+    <string name="comience">COMIENCE EL CUESTIONARIO</string>
+    <string name="cuestionario">A continuación un cuestionario donde podrá comprobar lo que sabe de algunas curiosidades de Android.</string>
+    <string name="enhorabuena">¡ENHORABUENA! a conseguido la puntuación máxima.</string>
+    <string name="escriba_respuesta">ESCRIBA SU RESPUESTA</string>
+    <string name="fallo">A fallado :( No sumas puntos.</string>
+    <string name="faltan_preguntas">FALTAN PREGUNTAS POR CONTESTAR</string>
+    <string name="regular">"REGULAR :| Pero 10 puntos más!. "</string>
+    <string name="respuesta_enviada">RESPUESTA ENVIADA</string>
+    <string name="seleccione_dos">SELECCIONE DOS RESPUESTAS</string>
+    <string name="seleccione_respuesta">SELECCIONE UNA RESPUESTA</string>
+    <string name="puntuacionMaxima">Puntuación Máxima: 70 puntos.</string>
+</resources>
